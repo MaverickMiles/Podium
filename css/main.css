@@ -1,1 +1,117 @@
-/* For index.html */
+html{
+    width:auto;
+    height: auto;
+    min-width: 1280px;
+}
+body{
+    background: #F8F8F8;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    margin:0px;
+  
+}
+
+.header{
+    background:#EBD19E;
+    width: 100%;
+    margin-left:0px;
+    height: 180px;
+    border-bottom:1px solid black;
+}
+
+.top-header{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+}
+
+.podium-icon{
+    margin-left: 50px;
+}
+.podium-text{
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #A02D32;
+    font: italic 20px Lora;
+    text-align: center;
+}
+
+.podium-text-title{
+    font-size: 48px;
+}
+
+.podium-text-body{
+    width: 306px;
+    font-size: 14px;
+    line-height: 18px; 
+}
+
+.user-action-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    margin-top: 40px;
+}
+
+.action-button{
+    margin-left:30px;
+    padding: 9px 15px;
+    background: #A02D32;
+    border-radius: 3px;
+    font: 14px/20px Oxygen;
+    text-justify:  center;
+    color: white;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.post-button{
+    width: 150px;
+}
+
+.bottom-header{
+    display: flex;
+    flex-direction:row;
+}
+
+.topics{
+    display:flex;
+    flex-direction:row;
+    margin-left: 70px;
+
+}
+
+.topic{
+    font: normal 24px/28px Roboto;
+    font-weight: 100;
+    color: rgb(37, 34, 34);
+    margin-right: 75px;
+    margin-top: 15px;
+    cursor: pointer
+    margin-bottom: 0px;
+}
+
+.search-bar{
+    margin-left: 40px;
+    overflow:auto;
+}
+
+.search-box{
+    margin-right:0px;
+    width: 350px;
+    height: 43px;
+    border: 1px solid #CCCCCC;
+    padding-left: 15px;
+}
+
+.search-button{
+    margin-left: 0px;
+}
+
