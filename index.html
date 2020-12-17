@@ -4,11 +4,35 @@
 
 <head>
     <link href="css/main.css" rel="stylesheet" />
+    <link href="css/modal.css" rel="stylesheet" />
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>Community Guidelines</h1>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem integer vitae justo eget. Nullam vehicula ipsum a arcu cursus vitae congue mauris. Quisque sagittis purus sit amet volutpat consequat mauris. Non odio euismod lacinia at quis risus sed vulputate odio. Odio eu feugiat pretium nibh ipsum consequat. Sit amet commodo nulla facilisi. Proin sagittis nisl rhoncus mattis rhoncus urna. Habitant morbi tristique senectus et netus et malesuada fames ac. Nec nam aliquam sem et tortor consequat id porta nibh. Aliquet porttitor lacus luctus accumsan. At consectetur lorem donec massa. Viverra adipiscing at in tellus integer feugiat scelerisque varius morbi. Nulla malesuada pellentesque elit eget gravida cum. Ac ut consequat semper viverra nam.
+                Feugiat in ante metus dictum at tempor commodo. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Ut tellus elementum sagittis vitae et leo duis ut. Elementum curabitur vitae nunc sed velit. Odio aenean sed adipiscing diam donec adipiscing tristique. Arcu dui vivamus arcu felis bibendum. Aliquam eleifend mi in nulla posuere sollicitudin. Vitae semper quis lectus nulla. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Cursus metus aliquam eleifend mi in. Ultrices in iaculis nunc sed augue lacus viverra. Id ornare arcu odio ut sem nulla. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae.            
+                Semper eget duis at tellus at urna condimentum mattis. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Scelerisque fermentum dui faucibus in. Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Augue mauris augue neque gravida in fermentum et sollicitudin ac. Nibh praesent tristique magna sit amet purus gravida quis. Sem fringilla ut morbi tincidunt augue interdum velit. Vel facilisis volutpat est velit egestas dui id ornare. Ut tristique et egestas quis ipsum suspendisse. Arcu dictum varius duis at consectetur lorem donec massa. Ac turpis egestas integer eget aliquet nibh praesent. Tortor condimentum lacinia quis vel eros donec ac odio.
+            </p>
+            </div>
+          <div class="modal-footer">
+            <div class = "disagree-div">
+                <span class="popuptext" id="myPopup">Ah! You really thought you had a choice.</span>
+                <button class="action-button disagree-button">DISAGREE</button>
+            </div>
+            <button class="action-button agree-button">AGREE</button>
+          </div>
+        </div>
+      
+      </div>
     <div class="header">
         <div class="top-header">
             <div class="podium-icon">
@@ -38,7 +62,12 @@
             </div>
         </div>
     </div>
-    <div class="body"></div>
+    <div class="main-page-body">
+        <div></div>
+        <div class="featured-thread"></div>
+        <div class="thread-box"></div>
+    </div>
 </body>
+<script src="js/modal.js"></script>
 
 </html>
