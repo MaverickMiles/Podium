@@ -206,3 +206,9 @@ body{
     margin-left:5px;
     color: #b3b0b0;
 }
+
+.response-button{
+    margin-left:0px;
+    margin-top: 20px; 
+    margin-bottom: 40px;
+}
