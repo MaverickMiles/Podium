@@ -53,9 +53,15 @@ body{
     font-family: "Whitney Semibold Regular";
 }
 
-.thread, .response{
+ .response{
     font-family: "Whitney Book Regular";
 }
+
+.current-thread{
+    padding: 10px;
+    font-family: "Whitney Semibold Regular";
+}
+
 
 
 .content {
@@ -143,12 +149,11 @@ body{
     text-justify:center;
     display: flex;
     flex-direction:row;
-
-}
-.thread-item{
     border:0px;
     border-bottom: 1px solid grey;
+
 }
+
 
 .post-title{
     flex-basis:75%;

@@ -46,22 +46,24 @@
     </div>
     <div class="page-body">
         <div class="page-sidebar">
-            <div class="sidebar-item collapsible">TOPICS</div>
+            <div class="sidebar-item collapsible pre-expand">TOPICS</div>
             <div class="content">
                 <div class="sidebar-topic collapsible">PHILOSOPHY</div>
                 <div class="sidebar-topic collapsible">RELIGION</div>
-                <div class="sidebar-topic collapsible">POLITICS</div>
+                <div class="sidebar-topic collapsible pre-expand">POLITICS</div>
                 <div class="threads content">
-                    <div class="thread collapsible"># The Consequences of Hostilities Between the States</div>
+                    <div class="thread collapsible pre-expand current-thread"># The Consequences of Hostilities Between the States</div>
                     <div class="responses content">
-                        <div class="response">The Case For Unification</div>   
-                        <div class="response">Self-Evident Truths</div>
-                        <div class="response">Dangers from Dissensions</div>
-                        <div class="response">States and Independence</div>
-                        <div class="response">Importance of Disagreement</div>  
+                        <div class="response collapsible">The Case For Unification</div>   
+                        <div class="response collapsible">Self-Evident Truths</div>
+                        <div class="response collapsible">Dangers from Dissensions</div>
+                        <div class="response collapsible">States and Independence</div>
+                        <div class="response collapsible">Importance of Disagreement</div>  
                     </div>
+                    <div class="thread collapsible"># How to win BIGLY in politics</div>
+                    <div class="thread collapsible"># What it means to be truly apolitical</div>
                 </div>
-                <div class="sidebar-topic">MISC.</div>
+                <div class="sidebar-topic collapsible">MISC.</div>
             </div>
             <div class="sidebar-item collapsible">TAGS</div>
             <div class="content">
@@ -75,7 +77,7 @@
             <div class="main-thread">
                 <div class="thread-title">The Consequences of Hostilities Between the States</div>
                 <div class="thread-body">
-                    <button class="thread-item collapsible" style="background:#FFFCF0;">
+                    <button class="thread-item collapsible pre-expand" style="background:#FFFCF0;">
                         <div class="post-title">The Case For Unification</div>
                         <div class="post-info">
                             <div class="post-info-item">Author: Alexander Hamilton</div>
@@ -201,6 +203,12 @@
                 } 
             });
         }
+
+        var pre_expand_list = document.getElementsByClassName("pre-expand")
+        for (i = 0; i < pre_expand_list.length; i++) {
+            pre_expand_list[i].click();
+        }
+
     });
    
 </script>
