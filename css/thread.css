@@ -1,6 +1,7 @@
 html{
     width:auto;
     height: auto;
+    min-height:100%;
     min-width: 1280px;
 }
 
@@ -18,18 +19,185 @@ body{
     background-color: #F8F8F8;
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: 100%;
     overflow-y:scroll;
     position:relative;
 }
 
 .page-sidebar{
-    width: 25%;
+    width: 30%;
+    min-height: 700px;
     height: 100%;
-    background-color:#A02D32;
+    background-color:rgb(112, 29, 29);
+    display: flex;
+    flex-direction:column;
+    color: white;
+    margin-top: 25px;
 }
+
 
 .main-page{
     width: 70%;
     height: 100%;
+    
+}
+
+.sidebar-topics{
+    display: flex;
+    flex-direction:column;
+    
+}
+
+.sidebar-topic, .thread, .response{
+    padding: 10px;
+    font-family: "Whitney Semibold Regular";
+}
+
+.thread, .response{
+    font-family: "Whitney Book Regular";
+}
+
+
+.content {
+    padding: 0px 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    text-align:left;
+    font-family:"Whitney Book Regular";
+    background-color: rgb(112, 29, 29);
+}
+
+
+.collapsible {
+    cursor: pointer;
+    font-size: 15px;
+}
+  
+ .collapsible:hover {
+    background-color: rgb(134, 37, 37);
+}
+
+.collapsible:after {
+    /* content: '\002B'; */
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.sidebar-item{
+    margin-top: 10px;
+    padding: 20px 25px;
+    font-family:"Whitney SemiBold Regular";
+    font-size: 20px;
+}
+
+.sidebar-item:after {
+    content: "\002B";
+} 
+
+/* .active:after {
+    content: "\2212";
+} */
+
+.main-page{
+    align-items: center;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+}
+
+.main-thread{
+    margin-top: 25px;
+    width: 70%;
+    height: auto;
+    display:flex;
+    flex-direction:column;
+    border:1px solid;
+}
+
+.thread-title{
+    /* width:100%; */
+    font-size: 18px;
+    line-height: 21px;
+    padding: 15px;
+    color: white;
+    background-color:black;
+    font-family: "Whitney Semibold Regular";
+}
+
+.thread-body{
+    width: 100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.thread-item{
+    padding: 10px;
+    background-color: #FFFCF0;
+    text-align:left;
+    text-justify:center;
+    display: flex;
+    flex-direction:row;
+
+}
+.thread-item{
+    border:0px;
+    border-bottom: 1px solid grey;
+}
+
+.post-title{
+    flex-basis:75%;
+    position:relative;
+    top: 20%;
+    font-family:"Whitney Bold"
+}
+.post-info{
+    flex-basis:25%;
+    display: flex;
+    flex-direction:column;
+}
+
+.post-info > *{
+    margin-bottom:2.5px;
+    margin-top:2.5px;
+    text-align:left;
+    font-size: 12px;
+    /* margin-left: 20px; */
+}
+
+.content-text{
+    padding: 10px 0px;
+}
+.post-footer{
+    display:flex;
+    flex-direction:row;
+    padding: 10px;
+    text-align:left;
+    border-top:grey 1px solid;
+}
+.edit-post{
+    padding: 10px;
+    flex-basis: 70%;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+
+    color: #b3b0b0;
+
+}
+
+.compelling-button{
+    height: 20px;
+}
+
+.compelling-count{
+    padding: 10px 0px;
+    margin-left:5px;
+    color: #b3b0b0;
 }
