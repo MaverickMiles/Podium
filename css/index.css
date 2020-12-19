@@ -1,6 +1,7 @@
 html{
     width:auto;
-    height: auto;
+    height: 100%;
+    min-height:100%;
     min-width: 1280px;
     justify-content: center;
     align-items: center;
@@ -15,4 +16,207 @@ body{
     display: flex;
     flex-direction:column;
     margin:0px; 
+    /* overflow-y:hidden; */
+}
+
+.main-page-body{
+    display: flex;
+    flex-direction:column;
+    padding-top: 20px;
+    /* margin-top:5px; */
+    text-justify: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.featured-thread{
+    display: flex;
+    flex-direction:column;
+    padding: 10px;
+    text-align: center;
+}
+
+.featured-thread-title{
+    font-family: "Whitney Semibold Regular";
+    font-size: 24px;
+    padding: 10px;
+}
+
+.thread{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-width: 700px;
+    height: 45px;
+    border: 1px solid;
+    border-radius:2px;
+    font-family: Helvetica;
+    background: rgb(255, 255, 255);
+    cursor:pointer;
+    /* align-items:center; */
+}
+
+.thread > *{
+    font-weight:bold;
+    height: 35px;
+}
+
+.thread-topic{
+    font-size:16px;
+    padding: 12px 10px;
+}
+
+.thread-name{
+    font-size: 14px;
+    padding: 14px 20px;
+    text-overflow: ellipsis;
+    max-width: 500px;
+    height: 20px;
+    text-align:left;
+}
+
+.thread-scale{
+    align-items:center;
+    padding:0px;
+    margin: 9px 15px;
+    border: 1.5px solid;
+    width: 75px;
+    height: 2px;
+    display: flex;
+    flex-direction:row;
+    padding: 11px 10px;
+}
+
+.thread-scale>*{
+    padding: 5px 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid;
+    height:100%;
+}
+
+.thread-scale-cold{
+    width: 61px;
+    height: 9px;
+    background-color: #53D6FF;
+}
+
+.thread-scale-hot{
+    border-left:0px;
+    width: 35px;
+    height: 9px;
+    background-color: #FFA857;
+}
+
+.thread-info{
+    display:flex;
+    flex-direction: column;
+    font-weight: normal;
+    font-size:12px;   
+    padding: 8px 10px;
+}
+
+.thread-box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 1000px;
+    margin-top: 30px; 
+    margin: 40px 160px;
+    /* height: 100%; */
+    /* overflow-y: scroll;  */
+    /* padding-bottom: 10px; */
+    
+}
+
+.main-thread{
+    border: none;
+
+}
+.thread-box-title{
+    cursor:unset;
+}
+.thread-box-title, .main-thread{
+    border:none;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid rgb(243, 237, 237) ;
+}
+
+.thread-box-topic, .main-thread-topic{
+    width: 70px;
+}
+
+.main-thread-topic{
+    font-size: 14px;
+    position: relative;
+    top: 5px; 
+    /* font-style:italic; */
+}
+.thread-box-name, .main-thread-name{
+    width: 520px;
+    text-align:left;
+}
+
+
+.thread-description{
+    color: rgb(95, 99, 104);
+    font-weight: normal;
+    text-align: left;
+    font-size: 13px;
+    font-family: Helvetica;
+    
+    /* white-space: nowrap;  */
+    
+    
+}
+
+
+.thread-box-info, .thread-info{
+    text-align: center;
+    width: 120px;
+    padding-top:10px;
+}
+
+.thread-box-info{
+    padding-top:16px;
+}
+
+.main-thread-scale{
+    margin: 12px 15px;
+}
+.thread-box-compelling{
+    width: 110px;
+    text-align: center;
+    padding-top:15px;
+}
+
+
+.compelling-count{
+    text-align: center;
+    font-weight: normal;
+    color: rgb(95, 99, 104);
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.main-thread-name{
+    padding-top:10px;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.thread-box-name, .thread-box-topic{
+    padding-top:16px;
+}
+
+.normal-weight{
+    font-weight:normal;
+}
+
+.bold-weight{
+    font-weight:bold;
 }
