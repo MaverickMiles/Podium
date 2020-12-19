@@ -99,14 +99,11 @@
 
 .slider {
     appearance: none;
-    width: 70%;
+    width: 90%;
     height: 2px;
     background: #000000;
     outline: none;
     position: relative;
-    top: 35%;
-    -ms-transform: translateY(-35%);
-    transform: translateY(-35%);
 }
 
 .slider::-webkit-slider-thumb {
