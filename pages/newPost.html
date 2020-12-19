@@ -1,0 +1,104 @@
+<!-- New Post Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<script type="text/javascript">
+    function countWords() {
+        var text = document.getElementById("post-text-entry").value;
+        var words = text.split(" ");
+        var numWords = 0
+        var lengths = [];
+        for (w in words){
+            if (words[w].length > 0){
+                numWords++;
+            }
+        }
+        document.getElementById('word-count').innerHTML = "Word Count: " + numWords;
+    }
+</script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="../resources/whitney-font/style.css"/>
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../css/modal.css" rel="stylesheet" />
+    <link href="../css/newPost.css" rel="stylesheet" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="top-header">
+            <div class="podium-icon" onclick="location.href='../index.html'">
+                <img src="/resources/podium_icon.svg" alt="Podium" width="140" height="120">
+            </div>
+            <div class="podium-text">
+                <div class="podium-text-title">PODIUM</div>
+                <div class="podium-text-body">If we don’t believe in free speech for the people we despise, we don’t believe in it at all.</div>
+            </div>
+            <div class="user-action-buttons">
+                <button class="action-button post-button" onclick="location.href='./newPost.html'">Post</button>
+                <button class="action-button" onclick="location.href='../index.html'">My Feed</button>
+                <button class="action-button">My Profile</button>
+                <button class="action-button">Logout</button>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="topics">
+                <div class="topic">Philosophy</div>
+                <div class="topic">Religion</div>
+                <div class="topic">Politics</div>
+                <div class="topic">Misc.</div>
+            </div>
+            <div class="search-bar">
+                <input class="search-box" placeholder="Search...">
+                <button class="action-button search-button">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="newPostTitle" class="box">
+        <span style="padding-left: 10px">Title: </span>
+        <input id="title-entry">
+    </div>
+    <div id="postSettings" class="box">
+        <span id="font-size-setting">Font Size:
+            <input id="font-size-entry">
+        </span>
+        <span id="font-style-setting-underline">U</span>
+        <span id="font-style-setting-italic">I</span>
+        <span id="font-style-setting-bold">B</span>
+    </div>
+    <div id="postAgreement" class="box">
+        <div>
+            <span style="float: left; display: inline-block; vertical-align: middle; padding-left: 10px;">Disagree</span>
+            <span style="float: right; display: inline-block; vertical-align: middle; padding-right: 10px;">Agree</span>
+        </div>
+        <input type="range" min="1" max="100" value="50" class="slider">
+    </div>
+    <div id="postEntry" class="box" oninput="countWords()">
+        <textarea name="postContent" id="post-text-entry"></textarea>
+    </div>
+    <div id="word-count" class="box">Word Count: 0</div>
+    <div id="postBottom">
+        <span id="tags">Tags:</span>
+        <span id="tag">test</span>
+        <span id="tag">test</span>
+        <span id="tag">test</span>
+        <img src="../resources/plus_button.svg" alt="Plus" id="plusButton">
+        <span id="publish">Publish</span>
+    </div>
+</body>
+
+<script>
+    var topics =  document.getElementsByClassName("topic");
+        for (i = 0; i < topics.length; i++) {
+            topics[i].addEventListener('click', function(){
+                document.getElementById('thread-page').click();
+            });
+        }
+</script>
+</html>

@@ -1,0 +1,217 @@
+html{
+    width:auto;
+    height: auto;
+    min-height:100%;
+	min-width: 1280px;
+	
+}
+
+body{
+    background: #F8F8F8;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+	margin:0px; 
+	padding-bottom: 30px;
+}
+
+.box {
+	width: 934px;
+	border-width: 1px 1px 0px 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+	background-color: white;
+	font: normal 20px/24px "Whitney Book Regular", Helvetica;
+	vertical-align: middle;
+}
+
+#newPostTitle {
+	margin-top: 52px;
+	height: 48px;
+}
+
+#title-entry {
+    margin-right:0px;
+    width: 800px;
+    height: 48px;
+    padding-left: 15px;
+    border-width:0px;
+	border:none;
+	outline: none;
+	font: normal 20px/24px "Whitney Book Regular", Helvetica;
+}
+
+#postSettings {
+	height: 48px;
+	vertical-align: middle;
+}
+
+#postAgreement {
+	height: 84px;
+	padding-top: 10px;
+	background-image: linear-gradient(to right, #FFA857, #FFFFFF , #53D6FF);
+	text-align: center;
+	vertical-align: middle;
+}
+
+#postEntry {
+	height: 324px;
+}
+
+#post-text-entry {
+    margin:0px;
+    width: 924px;
+    height: 314px;
+    border-width:0px;
+	border:none;
+	outline: none;
+	font: normal 20px/24px "Whitney Book Regular", Helvetica;
+	resize: none;
+	padding: 5px;
+}
+
+#word-count {
+	width: 924px;
+	border-width: 1px 1px 1px 1px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#postBottom {
+	margin-top: 20px;
+	height: 30px;
+	width: 934px;
+}
+
+#tags {
+	font: normal 20px/24px "Whitney Book Regular", Helvetica;
+	line-height: 30px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#tag {
+	border-radius: 3px;
+	font: 14px/20px Oxygen;
+	width: 106px;
+	line-height: 30px;
+	margin-left: 24px;
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	text-justify: center;
+	background: #A02D32;
+	text-align: center;
+	cursor: pointer;
+}
+
+#plusButton {
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	line-height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#publish {
+	width: 133px;
+	height: 30px;
+	border-radius: 3px;
+	float: right;
+	font: 14px/20px Oxygen;
+	line-height: 30px;
+	vertical-align: middle;
+	display: inline-block;
+	color: white;
+	background: #A02D32;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* learned how to do sliders from this page: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
+.slider {
+    appearance: none;
+    width: 90%;
+    height: 2px;
+    background: #000000;
+    outline: none;
+    position: relative;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%; 
+    background: #FFFFFF;
+    cursor: pointer;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+
+}
+
+.slider::-moz-range-thumb {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    cursor: pointer;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+}
+
+#font-size-setting {
+	margin-left: 10px;
+	line-height: 48px;
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
+}
+
+#font-size-entry {
+    margin-right:0px;
+    width: 30px;
+    height: 40px;
+    border-width:1px;
+	outline: none;
+	font: normal 20px/24px "Whitney Book Regular", Helvetica;
+}
+
+#font-style-setting-italic {
+	float: right;
+	display: inline-block;
+	line-height: 48px;
+	vertical-align: middle;
+	margin-right: 10px;
+	cursor: pointer;
+	font-style: italic;
+	margin-right: 10px;
+}
+
+#font-style-setting-bold {
+	float: right;
+	display: inline-block;
+	line-height: 48px;
+	vertical-align: middle;
+	margin-right: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+#font-style-setting-underline {
+	float: right;
+	display: inline-block;
+	line-height: 48px;
+	vertical-align: middle;
+	margin-right: 10px;
+	cursor: pointer;
+	text-decoration: underline;
+	margin-right: 10px;
+}
