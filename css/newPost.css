@@ -82,6 +82,16 @@
 	cursor: pointer;
 }
 
+#plusButton {
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	line-height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
 #publish {
 	width: 133px;
 	height: 30px;
