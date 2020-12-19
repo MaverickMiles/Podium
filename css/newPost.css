@@ -107,6 +107,7 @@
 	cursor: pointer;
 }
 
+/* learned how to do sliders from this page: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
 .slider {
     appearance: none;
     width: 90%;
@@ -136,6 +137,9 @@
     border-radius: 50%;
     background: #FFFFFF;
     cursor: pointer;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
 }
 
 #font-size-setting {
