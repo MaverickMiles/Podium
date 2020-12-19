@@ -141,7 +141,7 @@ body{
     height: 50px;
     overflow: hidden;
     text-overflow: ellipsis;
-    border-bottom: 1px solid rgb(243, 237, 237) ;
+    border-bottom: 1px solid rgb(221, 217, 217) ;
 }
 
 .thread-box-topic, .main-thread-topic{
