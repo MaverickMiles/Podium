@@ -38,20 +38,26 @@
 }
 
 #postEntry {
-	height: 350px;
-	border-width: 1px 1px 1px 1px;
+	height: 324px;
 }
 
 #post-text-entry {
     margin:0px;
     width: 924px;
-    height: 340px;
+    height: 314px;
     border-width:0px;
 	border:none;
 	outline: none;
 	font: normal 20px/24px "Whitney Book Regular", Helvetica;
 	resize: none;
 	padding: 5px;
+}
+
+#word-count {
+	width: 924px;
+	border-width: 1px 1px 1px 1px;
+	text-align: right;
+	padding-right: 10px;
 }
 
 #postBottom {

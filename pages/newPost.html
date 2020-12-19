@@ -2,6 +2,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script type="text/javascript">
+    function countWords() {
+        var text = document.getElementById("post-text-entry").value;
+        var words = text.split(" ");
+        var numWords = 0
+        var lengths = [];
+        for (w in words){
+            if (words[w].length > 0){
+                numWords++;
+            }
+        }
+        document.getElementById('word-count').innerHTML = "Word Count: " + numWords;
+    }
+</script>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="../resources/whitney-font/style.css"/>
@@ -64,9 +79,10 @@
         </div>
         <input type="range" min="1" max="100" value="50" class="slider">
     </div>
-    <div id="postEntry" class="box">
+    <div id="postEntry" class="box" oninput="countWords()">
         <textarea name="postContent" id="post-text-entry"></textarea>
     </div>
+    <div id="word-count" class="box">Word Count: 0</div>
     <div id="postBottom">
         <span id="tags">Tags:</span>
         <span id="tag">test</span>
