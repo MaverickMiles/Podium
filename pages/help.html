@@ -1,0 +1,93 @@
+<!-- New Post Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="../resources/whitney-font/style.css"/>
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../css/modal.css" rel="stylesheet" />
+    <link href="../css/newPost.css" rel="stylesheet" />
+    <link href="../css/help.css" rel="stylesheet" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="top-header">
+            <div class="podium-icon" onclick="location.href='../index.html'">
+                <img src="../resources/podium_icon.svg" alt="Podium" width="140" height="120">
+            </div>
+            <div class="podium-text">
+                <div class="podium-text-title">PODIUM</div>
+                <div class="podium-text-body">If we don’t believe in free speech for the people we despise, we don’t believe in it at all.</div>
+            </div>
+            <div class="user-action-buttons">
+                <button class="action-button post-button" onclick="location.href='./newPost.html'">Post</button>
+                <button class="action-button" onclick="location.href='../index.html'">My Feed</button>
+                <button class="action-button">My Profile</button>
+                <button class="action-button">Logout</button>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="topics">
+                <div class="topic">Philosophy</div>
+                <div class="topic">Religion</div>
+                <div class="topic">Politics</div>
+                <div class="topic">Misc.</div>
+            </div>
+            <div class="search-bar">
+                <input class="search-box" placeholder="Search...">
+                <button class="action-button search-button">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="help" id="general-guide">
+        <div class="help-heading">Welcome to Podium, a platform designed for discussion.</div>
+        <span>This is a community designed for the open-minded. It’s for those who want to dig deep into topics they are passionate about and debate with others who are just as passionate. It’s about finding common ground and changing your mind. <br><br>
+        If this is your first time visiting, we highly recommend that you go over the following information.</span><br><br>
+        <span><strong>General Browsing:</strong> The main homepage lists the title of threads ranked from most recently interacted with to least recently interacted with. Clicking into a thread reveals a series of posts, with the original post at the top. There are no comments, only replies to that first post, linearly listed down the page in chronological order.</span><br><br>
+        <span><strong>Posting:</strong> We invite users to draft a thoughtful, lengthy posts of the length of short essays. Posts can be edited after the fact, and a small note links to the original post. However, posts cannot be entirely deleted, only “struck out” by the original user with a small note on why the user changed their mind, and optionally, the user may decide to remove their username from the post.</span><br><br>
+        <span><strong>Compelling posts:</strong> Users may reward a limited number of interesting post per day by marking it as <i>compelling</i>. The most popular <i>compelling</i> posts will be placed on the top banner of the main page. Additionally, the original drafter of the post will be rewarded with badges (appearing next to their username) for various levels of <i>compelling</i> votes received across their posts. </span><br><br>
+        <span><strong>Color coding:</strong> Podium uses a unique color system to guide users to organize threads and posts visually. When a user posts, they use a gradient scale to signify with color how much they agree or disagree with the original post. You will find orange and light blue for disagreement and agreement, respectively. As you are browsing through the list of threads, you will find a bar (next to date) that represents that thread's split of agree/disagree. This will help you to quickly capture how the discussion is leading.</span><br><br>
+        <span><strong>Moderation:</strong> Our intend is never to violate anyone's free speech. Intervention, however, may be necessary on certain cases. We strongly recommend that you carefully review the community guidelines below.</span><br><br>
+    </div>
+    <div class="help" id="community-guide">
+        <div class="help-heading">Podium Community Guidelines</div>
+        <span id="last-update">Last updated Dec 20, 2020</span>
+        <div id="community-guidelines">
+            <p>
+                We encourage you to take your time with your posts. Craft an argument about something you believe in. Give facts and examples to back up your claims. Nothing will ever be deleted, but your real name will never be on the site or attached to your account. 
+                <br><br>
+                Posts should be:<br>
+                <ul class="dashed">
+                    <li> Designed to persuade other users and to open up civil debate.</li>
+                    <li> Grammatically clean and follow a cohesive argument. </li>
+                    <li> Remain on topic and help further the discussion present on the thread. </li>  
+                    <li> Be backed up by facts and citations whenever appropriate. </li>
+                </ul>
+                The following are highly discouraged:<br>
+                <ul class="dashed">
+                    <li> Posts aimed at hurting another community member, i.e. death threats and targeted insults.</li>
+                    <li> Racial slurs and aggressive, provocative language targeted at an individual or group. </li>
+                    <li> Inciting violence towards groups due to their race, ethnicity, national origin, sex, gender, religion, disability, or disease. </li>
+                </ul>
+                The following will be deleted by moderators: <br>
+                <ul class="dashed">
+                    <li> Posts containing irrelevant information. </li>
+                    <li> Pornographic or explicit media and links that take users to explicit content. </li>
+                    <li> Advertising or the selling of anything of any kind.</li>
+                    <li> Viruses and malware. </li>
+                    <li> Copyright infringement. </li>
+                    <li> Depictions of self injury or extremely graphic violence.</li>
+                    <li> Posts containing anything considered illegal by the United States government.</li>
+                </p>
+        </div>
+    </div>
+</body>
+<a id="thread-page" onclick="location.href='./thread.html'" style="visibility:hidden;"></a>
+</html>

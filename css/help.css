@@ -1,0 +1,46 @@
+.help {
+	font-family: "Whitney Book Regular";
+	font-size: 18px;
+	padding-top: 20px;
+	padding-left: 20%;
+	padding-right: 20%;
+	line-height: 1.5;
+}
+
+.help-heading {
+	font-size: 24px;
+	font-weight: bold;
+	text-align:center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.help-list {
+	font-size: 16px;
+}
+
+#last-update {
+	font-style: italic;
+	font-size: 14px;
+}
+
+#general-guide {
+	background-color: #FFFCF0;
+}
+
+#community-guide {
+	background-color: #f1f1f1;
+}
+
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -5px;
+}
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -5px;
+}
+
+

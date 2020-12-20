@@ -220,3 +220,7 @@ body{
 .bold-weight{
     font-weight:bold;
 }
+
+#popup-text-header {
+    text-align: center;
+}
