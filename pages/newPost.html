@@ -17,7 +17,6 @@
     }
 
     function changeTextSize(x) {
-        document.getElementById("test").innerHTML = document.getElementById("font-size-box").innerHTML;
         var size = parseInt(document.getElementById("font-size-box").innerHTML);
         if (x == "+"  && size < 40){
             size++;
@@ -106,7 +105,6 @@
         <img src="../resources/plus_button.svg" alt="Plus" id="plusButton">
         <span id="publish" onclick="location.href='./thread.html'">Publish</span>
     </div>
-    <div id="test"></div>
 </body>
 <a id="thread-page" onclick="location.href='./thread.html'" style="visibility:hidden;"></a>
 <script>
