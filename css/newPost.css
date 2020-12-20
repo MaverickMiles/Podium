@@ -214,3 +214,29 @@ body{
 	text-decoration: underline;
 	margin-right: 10px;
 }
+
+#font-adjustment-up {
+	font: normal 20px/24px "Whitney Book Regular", Helvetica;
+	border-width: 1px;
+	border-color: grey;
+	border-style: solid;
+	cursor: pointer;
+}
+
+#font-adjustment-down {
+	font: normal 20px/24px "Whitney Book Regular", Helvetica;
+	border-width: 1px;
+	border-color: grey;
+	border-style: solid;
+	cursor: pointer;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-left: 5px;
+}
+
+#font-size-box {
+	text-align: center;
+	font: normal 20px/24px "Whitney Book Regular", Helvetica;
+	width: 25px;
+	display: inline-block;
+}

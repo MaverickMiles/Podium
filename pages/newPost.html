@@ -15,6 +15,19 @@
         }
         document.getElementById('word-count').innerHTML = "Word Count: " + numWords;
     }
+
+    function changeTextSize(x) {
+        document.getElementById("test").innerHTML = document.getElementById("font-size-box").innerHTML;
+        var size = parseInt(document.getElementById("font-size-box").innerHTML);
+        if (x == "+"  && size < 40){
+            size++;
+            document.getElementById("font-size-box").innerHTML = size;
+        }
+        else if (x == "-" && size > 1) {
+            size--;
+            document.getElementById("font-size-box").innerHTML = size;
+        }
+    }
 </script>
 
 <head>
@@ -66,7 +79,9 @@
     </div>
     <div id="postSettings" class="box">
         <span id="font-size-setting">Font Size:
-            <input id="font-size-entry">
+            <span id="font-adjustment-down" onclick="changeTextSize('-')">-</span>
+            <span id="font-size-box">12</span>
+            <span id="font-adjustment-up" onclick="changeTextSize('+')">+</span>
         </span>
         <span id="font-style-setting-underline">U</span>
         <span id="font-style-setting-italic">I</span>
@@ -91,6 +106,7 @@
         <img src="../resources/plus_button.svg" alt="Plus" id="plusButton">
         <span id="publish">Publish</span>
     </div>
+    <div id="test"></div>
 </body>
 <a id="thread-page" onclick="location.href='./thread.html'" style="visibility:hidden;"></a>
 <script>
