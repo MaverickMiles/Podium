@@ -156,7 +156,6 @@ body{
 
 
 .post-title{
-    flex-basis:75%;
     position:relative;
     top: 20%;
     font-family:"Whitney Bold"
@@ -194,7 +193,7 @@ body{
     text-decoration-line: underline;
     cursor: pointer;
 
-    color: #b3b0b0;
+    color: #696868;
 
 }
 
@@ -205,11 +204,53 @@ body{
 .compelling-count{
     padding: 10px 0px;
     margin-left:5px;
-    color: #b3b0b0;
+    color: #474747;
 }
 
 .response-button{
     margin-left:0px;
     margin-top: 20px; 
     margin-bottom: 40px;
+}
+
+.post-main-info{
+    flex-basis:75%;
+    display: flex;
+    flex-direction:column;
+}
+
+.post-type{
+    margin-top: 2px;
+    margin-left: 2px;
+    color: grey;
+    font-family:"Whitney Book regular";
+}
+
+.bold{
+    font-family:"Whitney Semibold regular";
+}
+
+
+[data-tooltip]:before {            
+    position : absolute;
+     content : attr(data-tooltip);
+     opacity : 0;
+     text-justify: center;
+     margin-left: 220px;
+     margin-top: 5px;
+     font-family:"Whitney Semibold regular";
+     font-size: 12px;
+     font-style:italic;
+     color: white;
+     background-color: grey;
+     padding: 10px;
+     border-radius: 2px;
+}
+
+[data-tooltip]:hover:before {        
+    opacity : 1;
+}
+
+[data-tooltip]:not([data-tooltip-persistent]):before {
+    pointer-events: none;
 }
