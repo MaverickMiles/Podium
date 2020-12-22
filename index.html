@@ -14,6 +14,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
 </head>
 
+<script type="text/javascript">
+	function isClickable(){
+		if (document.getElementById("rule1").checked &&
+			document.getElementById("rule2").checked &&
+			document.getElementById("rule3").checked &&
+			document.getElementById("rule4").checked &&
+			document.getElementById("rule5").checked &&
+			document.getElementById("rule6").checked &&
+			document.getElementById("rule7").checked &&
+			document.getElementById("rule8").checked) {
+
+			document.getElementById("user-agree-button").attr("disabled", false);
+		} else {
+			document.getElementById("user-agree-button").attr("disabled", true);
+		}
+	}
+</script>
+
 <body>
     <div id="myModal" class="modal">
         <!-- Modal content -->
@@ -29,23 +47,19 @@
                     <i>If this is your first time visiting, or would like to review Podium's complete community guidelines, please visit our <a href="pages/help.html">help page</a>.</i><br>
                 </div>
                 <br>
-                <strong>Posts should be</strong>
-                <ul class="dashed">
-                    <li> Relevant and designed to persuade other users and to open up civil debate.</li>
-                    <li> Grammatically clean and follow a cohesive argument.</li>
-                </ul>
-                <strong>The following are highly discouraged</strong>
-                <ul class="dashed">
-                    <li> Low effort or off-topic posts</li>
-                    <li> Purposefully inflammatory posts or targeted insults</li>
-                </ul>
-                <strong>The following will be deleted by moderators</strong>
-                <ul class="dashed">
-                    <li> Aggressive, provocative language targeted at an individual or group. </li>
-                    <li> Advertising or the selling of anything of any kind.</li>
-                    <li> Depictions of extremely graphic violence or explicit content.</li>
-                    <li> Posts containing anything considered illegal by the United States government. </li>
-                </ul>
+                <strong>Posts should be</strong><br>
+                <input type="checkbox" id="rule1" name="rule1" value="rule1">Relevant and designed to persuade other users and to open up civil debate.<br>
+                <input type="checkbox" id="rule2" name="rule2" value="rule2">Grammatically clean and follow a cohesive argument.<br>
+                <br>
+                <strong>The following are highly discouraged</strong><br>
+                <input type="checkbox" id="rule3" name="rule3" value="rule3">Low effort or off-topic posts<br>
+                <input type="checkbox" id="rule4" name="rule4" value="rule4">Purposefully inflammatory posts or targeted insults<br>
+                <br>
+                <strong>The following will be deleted by moderators</strong><br>
+                <input type="checkbox" id="rule5" name="rule5" value="rule5">Aggressive, provocative language targeted at an individual or group. <br>
+                <input type="checkbox" id="rule6" name="rule6" value="rule6">Advertising or the selling of anything of any kind.<br>
+                <input type="checkbox" id="rule7" name="rule7" value="rule7">Depictions of extremely graphic violence or explicit content.<br>
+                <input type="checkbox" id="rule8" name="rule8" value="rule8">Posts containing anything considered illegal by the United States government. <br>
                 </p>
             </div>
           <div class="modal-footer">
@@ -53,7 +67,7 @@
                 <span class="popuptext" id="myPopup">Ah! You really thought you had a choice.</span>
                 <button class="action-button disagree-button">DISAGREE</button>
             </div>
-            <button class="action-button agree-button">AGREE</button>
+            <button class="action-button agree-button" id="user-agree-button" onclick="isClickable()">AGREE</button>
           </div>
         </div>
       
